@@ -17,9 +17,30 @@
   </head>
   <body>
     <div class="main-block">
-      <div class="bill-amount">Bill</div>
-      <div class="tip-%">Select Tip % 5% 10% 15% 25% 50% Custom</div>
-      <div class="num-of-people">Number of People</div>
+      <form action="" class="bill-amount">
+        <label for="bill-amount">Bill</label>
+        <input type="number" id="bill" name="bill" min="1" />
+      </form>
+
+      <div class="tip-percentage">
+        <label for="percentage-btns">Select Tip %</label>
+        <button class="five-percent">5%</button>
+        <button class="ten-percent">10%</button>
+        <button class="fifteen-percent">15%</button>
+        <button class="twenty-five-percent">25%</button>
+        <button class="fifty-percent">50%</button>
+        <input
+          type="number"
+          id="custom-percentage"
+          name="custom-percentage"
+          class="custom-percentage"
+        />
+      </div>
+      <form action="" class="number-of-people">
+        <label for="number-of-people">Number of People</label>
+        <input type="number" id="num-of-people" min="1" />
+      </form>
+
       <div class="tip/person">Tip Amount / person</div>
       <div class="total/person">Total / person</div>
       <div class="reset-btn">Reset</div>
