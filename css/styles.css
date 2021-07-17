@@ -4,28 +4,68 @@ body {
 }
 
 .main-block {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
+  font-family: "Space Mono", monospace;
   display: grid;
   grid-template-columns: 50% 50%;
   margin-left: 12rem;
   margin-right: 12rem;
   margin-top: 9rem;
-
   gap: 16px;
+  border-radius: 12px;
+}
+
+.left-block {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.right-block {
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 12px;
+  margin: 2rem 3rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
 }
 
 .bill-amount {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
   grid-column: 1;
   grid-row: 1;
   display: grid;
 }
 
+#bill {
+  font-size: 2rem;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+}
+
 .tip-percentage {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
   grid-column: 1;
   grid-row: 2;
   display: grid;
   grid-template-columns: 33% 34% 33%;
   gap: 10px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.tip-btn {
+  background-color: hsl(183, 100%, 15%);
+  border: none;
+  color: #ffffff;
+  font-family: "Space Mono", monospace;
+  font-size: 1.5rem;
+  padding: 0.5rem 0 0.5rem 0;
+  border-radius: 8px;
 }
 
 .five-percent {
@@ -54,13 +94,59 @@ body {
 }
 
 .custom-percentage {
+  font-family: "Space Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 8px;
   grid-column: 3;
   grid-row: 3;
+  background-color: #f5f5f5;
+  border: none;
 }
 .number-of-people {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
   grid-column: 1;
   grid-row: 3;
   display: grid;
+}
+
+#num-of-people {
+  font-size: 2rem;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+}
+
+.tip-person {
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 700;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.total-person {
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 700;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.reset-btn {
+  background-color: hsl(172, 67%, 45%);
+  font-family: "Space Mono", monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 8px;
+  grid-column: 1, 2;
+  grid-row: 4;
 }
 
 .attribution {
