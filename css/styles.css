@@ -194,6 +194,12 @@ input::-webkit-inner-spin-button {
   grid-row: 2;
 }
 
+.amounts {
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+  font-size: 3rem;
+}
+
 .reset-btn {
   background-color: hsl(172, 67%, 45%);
   font-family: "Space Mono", monospace;
