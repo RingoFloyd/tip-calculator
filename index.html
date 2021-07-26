@@ -36,7 +36,7 @@
 
         <div class="tip-percentage">
           <label for="percentage-btns">Select Tip %</label>
-          <button class="five-percent tip-btn">5%</button>
+          <button onClick="fivePercent()" class="five-percent tip-btn">5%</button>
           <button class="ten-percent tip-btn">10%</button>
           <button class="fifteen-percent tip-btn">15%</button>
           <button class="twenty-five-percent tip-btn">25%</button>
@@ -56,9 +56,9 @@
       </div>
       <div class="right-block">
         <div class="tip-person">Tip Amount / person</div>
-        <div class="tip-amount amounts">0.00</div>
+        <div class="tip-amount amounts" id="tip-per-person" >$0.00</div>
         <div class="total-person">Total / person</div>
-        <div class="total-amount amounts">0.00</div>
+        <div class="total-amount amounts" id="total-per-person" >$0.00</div>
         <button class="reset-btn">RESET</button>
       </div>
     </div>
