@@ -6,8 +6,8 @@ function fivePercent() {
     let tipAmountFive = billAmount / 20;
     let totalBill = tipAmountFive + billAmount;
     
-    document.getElementById("tip-per-person").innerHTML = "$" + tipAmountFive / peopleNumber;
-    document.getElementById("total-per-person").innerHTML = "$" + totalBill;
+    document.getElementById("tip-per-person").innerHTML = "$" + (tipAmountFive / peopleNumber).toFixed(2);
+    document.getElementById("total-per-person").innerHTML = "$" + totalBill.toFixed(2);
 }
 
 function tenPercent() {
@@ -16,8 +16,8 @@ function tenPercent() {
     let tipAmountTen = billAmount / 10;
     let totalBill = tipAmountTen + billAmount;
 
-    document.getElementById("tip-per-person").innerHTML = "$" + tipAmountTen / peopleNumber;
-    document.getElementById("total-per-person").innerHTML = "$" + totalBill;
+    document.getElementById("tip-per-person").innerHTML = "$" + (tipAmountTen / peopleNumber).toFixed(2);
+    document.getElementById("total-per-person").innerHTML = "$" + totalBill.toFixed(2);
 }
 
 function fifteenPercent() {
@@ -26,8 +26,8 @@ function fifteenPercent() {
     let tipAmountFifteen = (billAmount * 3) / 20;
     let totalBill = tipAmountFifteen + billAmount;
 
-    document.getElementById("tip-per-person").innerHTML = "$" + tipAmountFifteen / peopleNumber;
-    document.getElementById("total-per-person").innerHTML = "$" + totalBill;
+    document.getElementById("tip-per-person").innerHTML = "$" + (tipAmountFifteen / peopleNumber).toFixed(2);
+    document.getElementById("total-per-person").innerHTML = "$" + totalBill.toFixed(2);
 }
 
 function twentyFivePercent() {
@@ -36,8 +36,8 @@ function twentyFivePercent() {
     let tipAmountTwentyFive = billAmount / 4;
     let totalBill = tipAmountTwentyFive + billAmount;
 
-    document.getElementById("tip-per-person").innerHTML = "$" + tipAmountTwentyFive / peopleNumber;
-    document.getElementById("total-per-person").innerHTML = "$" + totalBill;
+    document.getElementById("tip-per-person").innerHTML = "$" + (tipAmountTwentyFive / peopleNumber).toFixed(2);
+    document.getElementById("total-per-person").innerHTML = "$" + totalBill.toFixed(2);
 }
 
 function fiftyPercent() {
@@ -46,7 +46,7 @@ function fiftyPercent() {
     let tipAmountFifty = billAmount / 2;
     let totalBill = tipAmountFifty + billAmount;
 
-    document.getElementById("tip-per-person").innerHTML = "$" + tipAmountFifty / peopleNumber;
-    document.getElementById("total-per-person").innerHTML = "$" + totalBill;
+    document.getElementById("tip-per-person").innerHTML = "$" + (tipAmountFifty / peopleNumber).toFixed(2);
+    document.getElementById("total-per-person").innerHTML = "$" + totalBill.toFixed(2);
 }
 
