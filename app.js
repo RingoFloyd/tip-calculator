@@ -7,7 +7,7 @@ parseInt(document.getElementById("custom-percentage").value, 10).addEventListene
     let tipAmountCustom = (billAmount / customInput) * 100;
     let totalBill = billAmount + tipAmountCustom;
 
-    document.getElementById("tip-per-person").innerHTML = "$" + (tipAmountCustom / peopleNumber).toFixed(2);
+    document.getElementById("tip-per-person").innerHTML = "$" + (tipAmountCustom / peopleNumber).toFixed(2); //toFixed ensures there is always two decimal spaces to make it consistent with financial numbers.
     document.getElementById("total-per-person").innerHTML = "$" + (totalBill / peopleNumber).toFixed(2);
 
     }
@@ -73,5 +73,16 @@ function reset() {
     document.getElementById("bill").value = "";
     document.getElementById("num-of-people").value = "";
 
+}
+
+function customTip() {
+    var customTipPercent = prompt("What percentage would you like to tip?");
+    let billAmount = parseInt(document.getElementById("bill").value, 10);
+    let peopleNumber = parseInt(document.getElementById("num-of-people").value, 10);
+    let tipAmountCustom = (billAmount/100) * customTipPercent;
+    let totalBill = tipAmountCustom + billAmount;
+
+    document.getElementById("tip-per-person").innerHTML = "$" + (tipAmountCustom / peopleNumber).toFixed(2);
+    document.getElementById("total-per-person").innerHTML = "$" + (totalBill / peopleNumber).toFixed(2);
 }
 
