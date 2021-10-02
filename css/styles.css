@@ -41,7 +41,7 @@ body {
 .bill-input {
   background-image: url(../images/icon-dollar.svg);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 2%;
 }
 
 #bill {
@@ -110,7 +110,7 @@ input::-webkit-inner-spin-button {
 }
 
 .tip-btn:hover {
-  background-color:hsl(172, 67%, 45%);
+  background-color: hsl(172, 67%, 45%);
 }
 
 .five-percent {
@@ -151,7 +151,7 @@ input::-webkit-inner-spin-button {
 }
 
 .custom-btn:hover {
-  background-color:hsl(172, 67%, 45%);
+  background-color: hsl(172, 67%, 45%);
 }
 
 .custom-percentage {
@@ -184,7 +184,7 @@ input::-webkit-inner-spin-button {
   border-radius: 8px;
   background-image: url(../images/icon-person.svg);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 2%;
 }
 
 #num-of-people:focus {
@@ -233,9 +233,8 @@ input::-webkit-inner-spin-button {
 }
 
 .reset-btn:hover {
-  background-color:hsl(186, 14%, 43%);
+  background-color: hsl(186, 14%, 43%);
   color: #f5f5f5;
-
 }
 
 .attribution {
